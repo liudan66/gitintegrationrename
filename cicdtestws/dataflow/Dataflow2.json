@@ -1,0 +1,32 @@
+{
+	"name": "Dataflow2",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "Parquet1",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "Parquet2",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [
+				{
+					"name": "Sort1"
+				}
+			],
+			"script": "source(output(\n\t\tvendorID as string,\n\t\ttpepPickupDateTime as timestamp,\n\t\ttpepDropoffDateTime as timestamp,\n\t\tpassengerCount as integer,\n\t\ttripDistance as double,\n\t\tpuLocationId as string,\n\t\tdoLocationId as string,\n\t\tstartLon as double,\n\t\tstartLat as double,\n\t\tendLon as double,\n\t\tendLat as double,\n\t\trateCodeId as integer,\n\t\tstoreAndFwdFlag as string,\n\t\tpaymentType as string,\n\t\tfareAmount as double,\n\t\textra as double,\n\t\tmtaTax as double,\n\t\timprovementSurcharge as string,\n\t\ttipAmount as double,\n\t\ttollsAmount as double,\n\t\ttotalAmount as double\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tformat: 'parquet') ~> source1\nsource1 sort(asc(vendorID, true)) ~> Sort1\nSort1 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tformat: 'parquet',\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sink1"
+		}
+	}
+}
