@@ -5,7 +5,7 @@
 			"name": "Folder1"
 		},
 		"content": {
-			"query": "SELECT  1234 AS oooo\nFROM",
+			"query": "SELECT  1234 AS oooo\nFROM ALLOW_ENCRYPTED_VALUE_MODIFICATIONS",
 			"metadata": {
 				"language": "sql"
 			},
