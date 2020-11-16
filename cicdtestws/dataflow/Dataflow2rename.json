@@ -1,6 +1,9 @@
 {
 	"name": "Dataflow2rename",
 	"properties": {
+		"folder": {
+			"name": "Dataflowfolder"
+		},
 		"type": "MappingDataFlow",
 		"typeProperties": {
 			"sources": [
