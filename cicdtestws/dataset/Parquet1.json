@@ -1,0 +1,107 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "cicdtestws-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "part-00036-tid-210938564719836543-aea5b543-5e83-4a7d-8d31-69f72c50b05d-15156-1.c000.snappy.parquet",
+				"folderPath": "parquet",
+				"fileSystem": "hozhao"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "vendorID",
+				"type": "UTF8"
+			},
+			{
+				"name": "tpepPickupDateTime",
+				"type": "INT96"
+			},
+			{
+				"name": "tpepDropoffDateTime",
+				"type": "INT96"
+			},
+			{
+				"name": "passengerCount",
+				"type": "INT32"
+			},
+			{
+				"name": "tripDistance",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "puLocationId",
+				"type": "UTF8"
+			},
+			{
+				"name": "doLocationId",
+				"type": "UTF8"
+			},
+			{
+				"name": "startLon",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "startLat",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "endLon",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "endLat",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "rateCodeId",
+				"type": "INT32"
+			},
+			{
+				"name": "storeAndFwdFlag",
+				"type": "UTF8"
+			},
+			{
+				"name": "paymentType",
+				"type": "UTF8"
+			},
+			{
+				"name": "fareAmount",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "extra",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "mtaTax",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "improvementSurcharge",
+				"type": "UTF8"
+			},
+			{
+				"name": "tipAmount",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "tollsAmount",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "totalAmount",
+				"type": "DOUBLE"
+			}
+		]
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}
