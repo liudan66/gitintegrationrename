@@ -4,12 +4,6 @@
 	"parameters": {
 		"workspaceName": {
 			"value": "cicdtestws"
-		},
-		"cicdtestws-WorkspaceDefaultSqlServer_connectionString": {
-			"value": ""
-		},
-		"cicdtestws-WorkspaceDefaultStorage_properties_typeProperties_url": {
-			"value": "https://hozhao0924gen2.dfs.core.windows.net"
 		}
 	}
 }
