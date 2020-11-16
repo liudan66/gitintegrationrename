@@ -1,6 +1,9 @@
 {
 	"name": "SQL script 1",
 	"properties": {
+		"folder": {
+			"name": "Folder1"
+		},
 		"content": {
 			"query": "SELECT  1234 AS oooo",
 			"metadata": {
