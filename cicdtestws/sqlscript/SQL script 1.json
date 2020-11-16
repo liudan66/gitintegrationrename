@@ -5,7 +5,7 @@
 			"name": "Folder1"
 		},
 		"content": {
-			"query": "SELECT  1234 AS oooo",
+			"query": "SELECT  1234 AS oooo\nFROM",
 			"metadata": {
 				"language": "sql"
 			},
