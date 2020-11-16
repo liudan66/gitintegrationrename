@@ -251,7 +251,7 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/Dataflow1rename')]",
+			"name": "[concat(parameters('workspaceName'), '/Dataflow2rename')]",
 			"type": "Microsoft.Synapse/workspaces/dataflows",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
@@ -289,7 +289,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/Dataflow2')]",
+			"name": "[concat(parameters('workspaceName'), '/Dataflowrename')]",
 			"type": "Microsoft.Synapse/workspaces/dataflows",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
@@ -375,7 +375,7 @@
 			"dependsOn": []
 		},
 		{
-			"name": "[concat(parameters('workspaceName'), '/Charting in Synapse Notebook')]",
+			"name": "[concat(parameters('workspaceName'), '/Notebook rename')]",
 			"type": "Microsoft.Synapse/workspaces/notebooks",
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
