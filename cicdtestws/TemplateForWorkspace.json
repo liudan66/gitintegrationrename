@@ -333,6 +333,16 @@
 			]
 		},
 		{
+			"name": "[concat(parameters('workspaceName'), '/WorkspaceSystemIdentity')]",
+			"type": "Microsoft.Synapse/workspaces/credentials",
+			"apiVersion": "2019-06-01-preview",
+			"properties": {
+				"type": "ManagedIdentity",
+				"typeProperties": {}
+			},
+			"dependsOn": []
+		},
+		{
 			"name": "[concat(parameters('workspaceName'), '/Query CSV files')]",
 			"type": "Microsoft.Synapse/workspaces/sqlscripts",
 			"apiVersion": "2019-06-01-preview",
@@ -363,7 +373,7 @@
 					"name": "Folder1"
 				},
 				"content": {
-					"query": "SELECT  1234 AS oooo\nFROM ALLOW_ENCRYPTED_VALUE_MODIFICATIONS",
+					"query": "SELECT  1234 AS oooo\nFROM ALLOW_ENCRYPTED_VALUE_MODIFICATIONS ",
 					"metadata": {
 						"language": "sql"
 					},
@@ -1353,19 +1363,17 @@
 					}
 				},
 				"metadata": {
-					"saveOutput": true,
 					"language_info": {
 						"name": "python"
-					},
-					"sessionKeepAliveTimeout": 30
+					}
 				},
 				"cells": [
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"print('hello world')"
 						],
+						"attachments": null,
 						"outputs": [],
 						"execution_count": null
 					}
@@ -1395,13 +1403,11 @@
 					"saveOutput": true,
 					"language_info": {
 						"name": "python"
-					},
-					"sessionKeepAliveTimeout": 30
+					}
 				},
 				"cells": [
 					{
 						"cell_type": "code",
-						"metadata": {},
 						"source": [
 							"print('hello world')"
 						],
