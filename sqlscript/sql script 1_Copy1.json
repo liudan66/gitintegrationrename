@@ -1,0 +1,17 @@
+{
+	"name": "sql script 1_Copy1",
+	"properties": {
+		"content": {
+			"query": "Begin\nwhile 1=1\nselect '123 -- testtesttesttesttesttesttest'\nend   ",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

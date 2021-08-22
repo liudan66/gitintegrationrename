@@ -1,0 +1,75 @@
+{
+	"name": "DebugFailCase5_Copy3",
+	"properties": {
+		"nbformat": 4,
+		"nbformat_minor": 2,
+		"bigDataPool": {
+			"referenceName": "catest",
+			"type": "BigDataPoolReference"
+		},
+		"sessionProperties": {
+			"driverMemory": "56g",
+			"driverCores": 8,
+			"executorMemory": "56g",
+			"executorCores": 8,
+			"numExecutors": 2,
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "2",
+				"spark.dynamicAllocation.maxExecutors": "2"
+			}
+		},
+		"metadata": {
+			"saveOutput": true,
+			"kernelspec": {
+				"name": "synapse_pyspark",
+				"display_name": "Synapse PySpark"
+			},
+			"language_info": {
+				"name": "python"
+			},
+			"a365ComputeOptions": {
+				"id": "/subscriptions/051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3/resourceGroups/Dansynapse/providers/Microsoft.Synapse/workspaces/dantestpara/bigDataPools/catest",
+				"name": "catest",
+				"type": "Spark",
+				"endpoint": "https://dantestpara.dev.azuresynapse.net/livyApi/versions/2019-11-01-preview/sparkPools/catest",
+				"auth": {
+					"type": "AAD",
+					"authResource": "https://dev.azuresynapse.net"
+				},
+				"sparkVersion": "2.4",
+				"nodeCount": 10,
+				"cores": 8,
+				"memory": 56,
+				"extraHeader": null
+			}
+		},
+		"cells": [
+			{
+				"cell_type": "code",
+				"source": [
+					"# file already exist\n",
+					"df = spark.createDataFrame([(1,1)],['Col_1','Col_2'])\n",
+					"df.write.csv(\"abfss://testzhao@hozhaogen2.dfs.core.windows.net/test/ouput.csv\",header = True)"
+				],
+				"attachments": null,
+				"execution_count": 1
+			},
+			{
+				"cell_type": "code",
+				"metadata": {
+					"microsoft": {
+						"language": "scala"
+					}
+				},
+				"source": [
+					"%%spark\n",
+					"var df = spark.read.csv(\"abfss://testzhao@hozhaogen2.dfs.core.windows.net/test/ouput.csv\")\n",
+					"df.write.csv(\"abfss://testzhao@hozhaogen2.dfs.core.windows.net/test/ouput.csv\")"
+				],
+				"attachments": null,
+				"execution_count": 2
+			}
+		]
+	}
+}

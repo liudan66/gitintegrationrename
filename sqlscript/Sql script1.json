@@ -1,0 +1,17 @@
+{
+	"name": "Sql script1",
+	"properties": {
+		"content": {
+			"query": "SQL *\nFROM spt_fallback_db  ",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

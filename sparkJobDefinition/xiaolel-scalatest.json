@@ -1,0 +1,29 @@
+{
+	"name": "xiaolel-scalatest",
+	"properties": {
+		"targetBigDataPool": {
+			"referenceName": "catest",
+			"type": "BigDataPoolReference"
+		},
+		"requiredSparkVersion": "2.4",
+		"language": "scala",
+		"jobProperties": {
+			"name": "xiaolel-scalatest",
+			"file": "abfss://mydefault@ltianscusgen2.dfs.core.windows.net/synapse/workspaces/ltianscusworkspace/batchjobs/Spark%20job%20definition%201/debugtest1.jar",
+			"className": "synapse.WasbIOTest",
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "1",
+				"spark.dynamicAllocation.maxExecutors": "1"
+			},
+			"args": [],
+			"jars": [],
+			"files": [],
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 1
+		}
+	}
+}

@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 3",
+	"properties": {
+		"content": {
+			"query": "USE AdventureWorks2012;\nGO\nSELECT *\nFROM Production.Product\nORDER BY Name ASC;\n-- Alternate way.\nUSE AdventureWorks2012;\nGO\nSELECT p.*\nFROM Production.Product AS p\nORDER BY Name ASC;\nGO",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"name": "Pipeline 2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Spark job definition1",
+				"type": "SparkJob",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"sparkJob": {
+						"referenceName": "DebugCase4",
+						"type": "SparkJobDefinitionReference"
+					}
+				}
+			}
+		],
+		"variables": {
+			"name": {
+				"type": "String",
+				"defaultValue": "1"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2021-07-07T02:51:39Z"
+	},
+	"type": "Microsoft.Synapse/workspaces/pipelines"
+}

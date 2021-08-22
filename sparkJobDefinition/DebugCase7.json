@@ -1,0 +1,28 @@
+{
+	"name": "DebugCase7",
+	"properties": {
+		"targetBigDataPool": {
+			"referenceName": "catest",
+			"type": "BigDataPoolReference"
+		},
+		"requiredSparkVersion": "2.4",
+		"language": "python",
+		"jobProperties": {
+			"name": "DebugCase7",
+			"file": "abfss://mydefault@ltianwestus2gen2.dfs.core.windows.net/synapse/workspaces/ltianwestus2/batchjobs/DebugCase7/DebugCase7.py",
+			"conf": {
+				"spark.dynamicAllocation.minExecutors": "1",
+				"spark.dynamicAllocation.maxExecutors": "1",
+				"spark.dynamicAllocation.enabled": "false"
+			},
+			"args": [],
+			"jars": [],
+			"files": [],
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 1
+		}
+	}
+}

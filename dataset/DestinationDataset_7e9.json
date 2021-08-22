@@ -1,0 +1,19 @@
+{
+	"name": "DestinationDataset_7e9",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "dantestpara-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "workspace"
+			}
+		},
+		"schema": {}
+	},
+	"type": "Microsoft.Synapse/workspaces/datasets"
+}

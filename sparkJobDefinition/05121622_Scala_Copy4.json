@@ -1,0 +1,32 @@
+{
+	"name": "05121622_Scala_Copy4",
+	"properties": {
+		"targetBigDataPool": {
+			"referenceName": "origin",
+			"type": "BigDataPoolReference"
+		},
+		"requiredSparkVersion": "2.4",
+		"language": "scala",
+		"jobProperties": {
+			"name": "05121622_Scala_Copy4",
+			"file": "abfss://sparkjob@hozhaogen2.dfs.core.windows.net/synapse/workspaces/bigdataqa1105ws/batchjobs/0303_lanjun_scala_upload/wordcount.jar",
+			"className": "WordCount",
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "1",
+				"spark.dynamicAllocation.maxExecutors": "1"
+			},
+			"args": [
+				"abfss://sparkjob@hozhaogen2.dfs.core.windows.net/scala/wordcount/shakespeare.txt",
+				"abfss://sparkjob@hozhaogen2.dfs.core.windows.net/scala/wordcount/result"
+			],
+			"jars": [],
+			"files": [],
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 1
+		}
+	}
+}

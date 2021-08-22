@@ -1,0 +1,28 @@
+{
+	"name": "xiaolel-pythontest",
+	"properties": {
+		"targetBigDataPool": {
+			"referenceName": "origin",
+			"type": "BigDataPoolReference"
+		},
+		"requiredSparkVersion": "2.4",
+		"language": "python",
+		"jobProperties": {
+			"name": "xiaolel-pythontest",
+			"file": "abfss://mydefault@ltianscusgen2.dfs.core.windows.net/synapse/workspaces/ltianscusworkspace/batchjobs/Spark%20job%20definition%201/testlog.py",
+			"conf": {
+				"spark.dynamicAllocation.enabled": "false",
+				"spark.dynamicAllocation.minExecutors": "1",
+				"spark.dynamicAllocation.maxExecutors": "1"
+			},
+			"args": [],
+			"jars": [],
+			"files": [],
+			"driverMemory": "28g",
+			"driverCores": 4,
+			"executorMemory": "28g",
+			"executorCores": 4,
+			"numExecutors": 1
+		}
+	}
+}
