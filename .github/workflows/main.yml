@@ -4,15 +4,14 @@ name: CI
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the main branch
+  # Triggers the workflow on push events but only for the workspace_publish branch
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: [ workspace_publish ]
+
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-- name: Synapse workspace deployment
-  uses: Azure/Synapse-workspace-deployment@v0.2
+- name: 'Synapse workspace deployment'
+  uses: 'zure/Synapse-workspace-deployment@v0.2'
   with:
     # Provide the Synapse workspace name where you want to deploy the artifacts.
     TargetWorkspaceName: 'workspacedeploy'
@@ -27,11 +26,11 @@ on:
     # Provide the resource group of the target Synapse workspace.
     resourceGroup: 'Dansynapse'
     # Provide client id of service principal.
-    clientId: 
+    clientId: ${{secrets.CLIENTID}}
     # Provide client secret of the service principal.
-    clientSecret: 
+    clientSecret:  ${{secrets.CLIENT_SECRET}}
     # Provide subscription id.
-    subscriptionId: 
+    subscriptionId: ${{secrets.SUBID}}
     # Provide tenant id.
     tenantId: '72f988bf-86f1-41af-91ab-2d7cd011db47'
     # Provide Active Directory Endpoint.
