@@ -1,39 +1,38 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+- name: Synapse workspace deployment
 
-# Controls when the workflow will run
 on:
   # Triggers the workflow on push events but only for the workspace_publish branch
   push:
     branches: [ workspace_publish ]
+    
+jobs:
 
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
-- name: 'Synapse workspace deployment'
-  uses: 'zure/Synapse-workspace-deployment@v0.2'
-  with:
-    # Provide the Synapse workspace name where you want to deploy the artifacts.
-    TargetWorkspaceName: 'workspacedeploy'
-    # Specify the path to the workspace artifacts template.
-    TemplateFile: './TemplateForWorkspace.json'
-    # Specify the path to the template parameter file.
-    ParametersFile: './TemplateParametersForWorkspace.json'
-    # Specify deployment parameter values.
-    OverrideArmParameters: # optional, default is 
-    # Provide the type of cloud environment. Valid values are: Azure Public, Azure China, Azure US Government, Azure Germany
-    Environment: 'Azure Public'
-    # Provide the resource group of the target Synapse workspace.
-    resourceGroup: 'Dansynapse'
-    # Provide client id of service principal.
-    clientId: ${{secrets.CLIENTID}}
-    # Provide client secret of the service principal.
-    clientSecret:  ${{secrets.CLIENT_SECRET}}
-    # Provide subscription id.
-    subscriptionId: ${{secrets.SUBID}}
-    # Provide tenant id.
-    tenantId: '72f988bf-86f1-41af-91ab-2d7cd011db47'
-    # Provide Active Directory Endpoint.
-    activeDirectoryEndpointUrl: 
-    # Provide Resource Manager Endpoint.
-    resourceManagerEndpointUrl: 
+   steps: 
+        uses: 'zure/Synapse-workspace-deployment@v0.2'
+        with:
+          # Provide the Synapse workspace name where you want to deploy the artifacts.
+          TargetWorkspaceName: 'workspacedeploy'
+          # Specify the path to the workspace artifacts template.
+          TemplateFile: './TemplateForWorkspace.json'
+          # Specify the path to the template parameter file.
+          ParametersFile: './TemplateParametersForWorkspace.json'
+          # Specify deployment parameter values.
+          OverrideArmParameters: # optional, default is 
+          # Provide the type of cloud environment. Valid values are: Azure Public, Azure China, Azure US Government, Azure Germany
+          Environment: 'Azure Public'
+          # Provide the resource group of the target Synapse workspace.
+          resourceGroup: 'Dansynapse'
+          # Provide client id of service principal.
+          clientId: ${{secrets.CLIENTID}}
+          # Provide client secret of the service principal.
+          clientSecret:  ${{secrets.CLIENT_SECRET}}
+          # Provide subscription id.
+          subscriptionId: ${{secrets.SUBID}}
+          # Provide tenant id.
+          tenantId: '72f988bf-86f1-41af-91ab-2d7cd011db47'
+          # Provide Active Directory Endpoint.
+          activeDirectoryEndpointUrl: 
+          # Provide Resource Manager Endpoint.
+          resourceManagerEndpointUrl: 
