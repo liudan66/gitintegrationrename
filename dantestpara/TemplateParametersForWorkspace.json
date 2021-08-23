@@ -5,9 +5,6 @@
 		"workspaceName": {
 			"value": "dantestpara"
 		},
-		"AzureBlobStorage1_connectionString": {
-			"value": ""
-		},
 		"AzureDataLakeStorage1_accountKey": {
 			"value": ""
 		},
@@ -35,6 +32,15 @@
 		"Kusto112501_servicePrincipalKey": {
 			"value": ""
 		},
+		"dancicdtest-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"dangitbugbash-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"dansynapsebugbash-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
 		"dantestpara-WorkspaceDefaultSqlServer_connectionString": {
 			"value": ""
 		},
@@ -47,107 +53,113 @@
 		"kusto1123_servicePrincipalKey": {
 			"value": ""
 		},
-		"Charting in Synapse Notebook2_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"ltianscusworkspace-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
 		},
-		"Charting in Synapse Notebook2_Copy1_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"testpewsdeploy-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
 		},
-		"Charting in Synapse Notebook_Copy1_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"workspacedeploy-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
 		},
-		"Charting in Synapse Notebook_Copy2_properties_bigDataPool_referenceName": {
-			"value": "catest"
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://hozhaotestgen2.dfs.core.windows.net"
 		},
-		"Charting in Synapse Notebook_Copy3_properties_bigDataPool_referenceName": {
-			"value": "catest"
+		"AzureDataLakeStorage1116_properties_typeProperties_url": {
+			"value": "https://storagegen2qingtest.dfs.core.windows.net"
 		},
-		"DebugFailCase3_properties_bigDataPool_referenceName": {
-			"value": "catest"
+		"AzureDataLakeStorage1117_properties_typeProperties_url": {
+			"value": "https://storagegen2qingtest.dfs.core.windows.net"
 		},
-		"DebugFailCase3_Copy1_properties_bigDataPool_referenceName": {
-			"value": "catest"
+		"AzureDataLakeStorage1118_properties_typeProperties_url": {
+			"value": "https://dansynapsestorage.dfs.core.windows.net"
 		},
-		"DebugFailCase5_properties_bigDataPool_referenceName": {
-			"value": "catest"
+		"AzureDataLakeStorage1119_properties_typeProperties_url": {
+			"value": "https://accessibilitytest.dfs.core.windows.net"
 		},
-		"DebugFailCase5_Copy1_properties_bigDataPool_referenceName": {
-			"value": "catest"
+		"AzureKeyVault1_properties_typeProperties_baseUrl": {
+			"value": "https://a365-e2e.vault.azure.net/"
 		},
-		"DebugFailCase5_Copy2_properties_bigDataPool_referenceName": {
-			"value": "catest"
+		"Gen1112501_properties_typeProperties_dataLakeStoreUri": {
+			"value": "https://storagegen1qingtest.azuredatalakestore.net/webhdfs/v1"
 		},
-		"DebugFailCase5_Copy3_properties_bigDataPool_referenceName": {
-			"value": "catest"
+		"Gen1112501_properties_typeProperties_tenant": {
+			"value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
 		},
-		"DebugFailCase5_Copy4_properties_bigDataPool_referenceName": {
-			"value": "catest"
+		"Gen1112501_properties_typeProperties_subscriptionId": {
+			"value": "051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3"
 		},
-		"DebugFailCase6_properties_bigDataPool_referenceName": {
-			"value": "catest"
+		"Gen1112501_properties_typeProperties_resourceGroupName": {
+			"value": "bigdataqa"
 		},
-		"DebugFailCase7_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"Gen2112501_properties_typeProperties_url": {
+			"value": "https://storagegen2qingtest.dfs.core.windows.net"
 		},
-		"DebugFailCase8_properties_bigDataPool_referenceName": {
-			"value": "catest"
+		"Gen21217_properties_typeProperties_url": {
+			"value": "https://storagegen2qingtest.dfs.core.windows.net"
 		},
-		"DebugFailCase9_properties_bigDataPool_referenceName": {
-			"value": "catest"
+		"Kusto112501_properties_typeProperties_tenant": {
+			"value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
 		},
-		"DebugFailCases4_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"Kusto112501_properties_typeProperties_servicePrincipalId": {
+			"value": "ac3a0e33-1db1-48ba-9b19-24ce0330ff5c"
 		},
-		"Getting Started with Delta Lake_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"Kusto112501_properties_typeProperties_database": {
+			"value": "cdndemo"
 		},
-		"InputOutputTest_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"dancicdtest-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://accessibilitytest.dfs.core.windows.net"
 		},
-		"InputOutputTest_Copy1_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"dangitbugbash-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://dansynapsestroage.dfs.core.windows.net"
 		},
-		"displayhtmlnotebook_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"dansynapsebugbash-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://dansynapsestroage.dfs.core.windows.net"
 		},
-		"displayhtmlnotebook_Copy1_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"dantestpara-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://dansynapsestoragev2.dfs.core.windows.net"
 		},
-		"displaynotebook_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"gen11123_properties_typeProperties_dataLakeStoreUri": {
+			"value": "https://ruxuadlsgen1.azuredatalakestore.net/webhdfs/v1"
 		},
-		"matplotlibnotebook_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"gen11123_properties_typeProperties_tenant": {
+			"value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
 		},
-		"matplotlibnotebook_Copy1_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"gen11123_properties_typeProperties_subscriptionId": {
+			"value": "051ddeca-1ed6-4d8b-ba6f-1ff561e5f3b3"
 		},
-		"mssparkutilsnotebook_properties_bigDataPool_referenceName": {
-			"value": "smallpool"
+		"gen11123_properties_typeProperties_resourceGroupName": {
+			"value": "ruxurg"
 		},
-		"outputAnalyzer_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"gen21122_properties_typeProperties_url": {
+			"value": "https://storagegen2qingtest.dfs.core.windows.net"
 		},
-		"outputAnalyzer_Copy1_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"kusto1122_properties_typeProperties_tenant": {
+			"value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
 		},
-		"outputAnalyzer_Copy2_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"kusto1122_properties_typeProperties_servicePrincipalId": {
+			"value": "123"
 		},
-		"outputAnalyzer_Copy3_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"kusto1122_properties_typeProperties_database": {
+			"value": "789"
 		},
-		"xiaolelTest_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"kusto1123_properties_typeProperties_tenant": {
+			"value": "72f988bf-86f1-41af-91ab-2d7cd011db47"
 		},
-		"xiaolelTest1_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"kusto1123_properties_typeProperties_servicePrincipalId": {
+			"value": "34"
 		},
-		"xiaolelTest1_Copy1_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"kusto1123_properties_typeProperties_database": {
+			"value": "87654"
 		},
-		"xiaolelTest1_Copy1_Copy1_properties_bigDataPool_referenceName": {
-			"value": "origin"
+		"ltianscusworkspace-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://ltianscusgen2.dfs.core.windows.net"
+		},
+		"testpewsdeploy-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://dansynapsestoragev2.dfs.core.windows.net"
+		},
+		"workspacedeploy-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://dansynapsestoragev2.dfs.core.windows.net"
 		}
 	}
 }
