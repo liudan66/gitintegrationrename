@@ -2,7 +2,7 @@ name: workspace deployment
 
     on:
         push:
-            branches: [ publish_branch ]
+            branches: [ main ]
     jobs:
         release:
             runs-on: windows-latest
