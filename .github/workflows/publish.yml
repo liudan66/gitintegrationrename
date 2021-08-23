@@ -19,9 +19,9 @@ jobs:
           # Provide the Synapse workspace name where you want to deploy the artifacts.
           TargetWorkspaceName: 'workspacedeploy'
           # Specify the path to the workspace artifacts template.
-          TemplateFile: '../dantestpara/TemplateForWorkspace.json' 
+          TemplateFile: '/dantestpara/TemplateForWorkspace.json' 
           # Specify the path to the template parameter file.
-          ParametersFile: '../dantestpara/TemplateParametersForWorkspace.json'
+          ParametersFile: '/dantestpara/TemplateParametersForWorkspace.json'
           # Specify deployment parameter values.
           OverrideArmParameters: ''
           # Provide the type of cloud environment. Valid values are: Azure Public, Azure China, Azure US Government, Azure Germany
