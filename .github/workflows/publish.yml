@@ -35,6 +35,6 @@ jobs:
           # Provide tenant id.
           tenantId: '72f988bf-86f1-41af-91ab-2d7cd011db47'
           # Provide Active Directory Endpoint.
-          activeDirectoryEndpointUrl: 'https://management.core.windows.net/'
+          activeDirectoryEndpointUrl: 'https://login.microsoftonline.com/'
           # Provide Resource Manager Endpoint. you can find the url in 
           resourceManagerEndpointUrl: 'https://management.azure.com/'
