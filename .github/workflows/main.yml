@@ -10,7 +10,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses:  Azure/Synapse-workspace-deployment@v0.2
+    - uses: Azure/Synapse-workspace-deployment@v0.2
       with:
           # Provide the Synapse workspace name where you want to deploy the artifacts.
           TargetWorkspaceName: 'workspacedeploy'
@@ -34,5 +34,5 @@ jobs:
           tenantId: '72f988bf-86f1-41af-91ab-2d7cd011db47'
           # Provide Active Directory Endpoint.
           activeDirectoryEndpointUrl: 'https://management.core.windows.net/'
-          # Provide Resource Manager Endpoint.
+          # Provide Resource Manager Endpoint. you can find the url in 
           resourceManagerEndpointUrl: 'https://management.azure.com/'
