@@ -1,5 +1,7 @@
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+on:
+  push: 
+    branches: [main]
 jobs:
   # This workflow contains a single job called "build"
   deploy:
@@ -8,8 +10,8 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      uses:  azure/Synapse-workspace-deployment@v0.2
-        with:
+    - uses:  Azure/Synapse-workspace-deployment@v0.2
+      with:
           # Provide the Synapse workspace name where you want to deploy the artifacts.
           TargetWorkspaceName: 'workspacedeploy'
           # Specify the path to the workspace artifacts template.
@@ -17,7 +19,7 @@ jobs:
           # Specify the path to the template parameter file.
           ParametersFile: './TemplateParametersForWorkspace.json'
           # Specify deployment parameter values.
-          OverrideArmParameters: # optional, default is 
+          OverrideArmParameters: ''
           # Provide the type of cloud environment. Valid values are: Azure Public, Azure China, Azure US Government, Azure Germany
           Environment: 'Azure Public'
           # Provide the resource group of the target Synapse workspace.
@@ -31,6 +33,6 @@ jobs:
           # Provide tenant id.
           tenantId: '72f988bf-86f1-41af-91ab-2d7cd011db47'
           # Provide Active Directory Endpoint.
-          activeDirectoryEndpointUrl: 
+          activeDirectoryEndpointUrl: ''
           # Provide Resource Manager Endpoint.
-          resourceManagerEndpointUrl: 
+          resourceManagerEndpointUrl: ''
