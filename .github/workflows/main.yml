@@ -33,6 +33,6 @@ jobs:
           # Provide tenant id.
           tenantId: '72f988bf-86f1-41af-91ab-2d7cd011db47'
           # Provide Active Directory Endpoint.
-          activeDirectoryEndpointUrl: ''
+          activeDirectoryEndpointUrl: 'https://management.core.windows.net/'
           # Provide Resource Manager Endpoint.
-          resourceManagerEndpointUrl: ''
+          resourceManagerEndpointUrl: 'https://management.azure.com/'
