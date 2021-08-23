@@ -1,7 +1,9 @@
 
 on:
   push: 
-    branches: [main]
+    branches:
+      - main
+      - workspace_publish
 jobs:
   # This workflow contains a single job called "build"
   deployworkspace:
