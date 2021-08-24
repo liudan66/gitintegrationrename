@@ -33,7 +33,7 @@ jobs:
           # Provide client id of service principal.
           clientId: ${{secrets.CLIENTID}}
           # Provide client secret of the service principal.
-          clientSecret:  ${{secrets.CLIENT_SECRET}}
+          clientSecret:  ${{secrets.CLIENTSECRET}}
           # Provide subscription id.
           subscriptionId: ${{secrets.SUBID}}
           # Provide tenant id.
